@@ -1,0 +1,4 @@
+mountpoints:
+  /:
+    url: https://da.live/source/lawson-university/lawson-university-web
+    type: markup

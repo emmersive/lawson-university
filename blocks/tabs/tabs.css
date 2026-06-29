@@ -1,0 +1,44 @@
+/* Tabs Block */
+
+.tabs-nav {
+  display: flex;
+  overflow-x: auto;
+  border-bottom: 2px solid var(--color-border);
+  gap: 0;
+  margin-bottom: 2rem;
+  scrollbar-width: none;
+}
+
+.tabs-nav::-webkit-scrollbar { display: none; }
+
+.tabs-nav button {
+  padding: 0.875rem 1.5rem;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  margin-bottom: -2px;
+  color: var(--color-text-light);
+  font-size: var(--text-base);
+  font-weight: 500;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all var(--transition);
+}
+
+.tabs-nav button:hover {
+  color: var(--color-navy);
+}
+
+.tabs-nav button[aria-selected='true'] {
+  color: var(--color-navy);
+  border-bottom-color: var(--color-gold);
+  font-weight: 700;
+}
+
+.tabs-panel {
+  display: none;
+}
+
+.tabs-panel.active {
+  display: block;
+}
