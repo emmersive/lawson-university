@@ -1,3 +1,4 @@
 tools/
+content-seed/
 *.md
 .github/

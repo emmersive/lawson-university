@@ -296,19 +296,3 @@ main {
 
 .dark-bg .eyebrow { color: var(--color-gold); }
 
-/* === Loading States === */
-main .section {
-  display: none;
-}
-
-main .section.appear {
-  display: block;
-}
-
-main .block {
-  visibility: hidden;
-}
-
-main .block.appear {
-  visibility: visible;
-}
