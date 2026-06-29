@@ -1,4 +1,2 @@
 mountpoints:
-  /:
-    url: https://da.live/source/emmersive/lawson-university
-    type: markup
+  /: https://da.live/source/emmersive/lawson-university
