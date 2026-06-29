@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/nav)",
+      "Bash(aem --version)",
+      "Bash(npx @adobe/aem-cli --version)",
+      "Bash(aem up *)"
+    ]
+  }
+}

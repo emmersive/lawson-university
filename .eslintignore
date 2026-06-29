@@ -1,0 +1,7 @@
+.*
+*.md
+LICENSE
+package.json
+package-lock.json
+scripts/aem.js
+tools/seed.js
