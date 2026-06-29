@@ -1,0 +1,29 @@
+/* Callout Block */
+
+.callout {
+  display: flex;
+  gap: 1rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--border-radius);
+  border-left: 4px solid var(--color-teal);
+  background: rgb(11 122 117 / 6%);
+}
+
+.callout-icon {
+  font-size: 1.25rem;
+  flex-shrink: 0;
+  margin-top: 0.125rem;
+}
+
+.callout-content p { margin: 0; font-size: var(--text-sm); color: var(--color-text); }
+.callout-content strong { color: var(--color-navy); }
+
+.callout.warning {
+  border-color: var(--color-gold);
+  background: rgb(242 169 0 / 8%);
+}
+
+.callout.important {
+  border-color: #e53e3e;
+  background: rgb(229 62 62 / 6%);
+}

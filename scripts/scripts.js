@@ -48,7 +48,15 @@ function decorateMain(main) {
  */
 async function loadPage() {
   await decorateTemplateAndTheme();
+
+  // Add skip link
+  const skipLink = document.createElement('a');
+  skipLink.className = 'skip-to-content';
+  skipLink.href = '#main-content';
+  skipLink.textContent = 'Skip to main content';
+  document.body.prepend(skipLink);
   const main = document.querySelector('main');
+  if (main) main.id = 'main-content';
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');

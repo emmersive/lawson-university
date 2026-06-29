@@ -1,0 +1,44 @@
+/* Logo Strip Block */
+
+.logo-strip {
+  overflow: hidden;
+}
+
+.logo-strip-label {
+  text-align: center;
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-text-muted);
+  margin-bottom: 1.5rem;
+}
+
+.logo-strip-track {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem 3rem;
+}
+
+.logo-strip-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.55;
+  transition: opacity var(--transition);
+  filter: grayscale(100%);
+}
+
+.logo-strip-item:hover {
+  opacity: 1;
+  filter: none;
+}
+
+.logo-strip-item img {
+  height: 40px;
+  width: auto;
+  max-width: 140px;
+  object-fit: contain;
+}
